@@ -5,7 +5,7 @@
 ## Global
 
 ```bash
-vim <filename>   # Open <filename> in vim
+vim <filename>       # Open <filename> in vim
     :help <topic>    # Open up built-in help docs about <topic> if any exists
     :q               # Quit vim
     :w               # Save current file
@@ -68,4 +68,48 @@ vim <filename>   # Open <filename> in vim
 	%	# Jump to matching parenthesis
 	}	# jump to next paragraph (or function/block, when editing code)
 	{	# jump to previous paragraph (or function/block, when editing code)
+```
+
+## Editing
+
+### Insert
+
+```bash
+	i	# insert before the cursor
+	I	# insert at the beginning of the line
+	a       # insert (append) after the cursor
+	A       # insert (append) at the end of the line
+	ea	# go to end of the word and insert
+	o       # append (open) a new line below the current line
+	O       # append (open) a new line above the current line
+	ea      # insert (append) at the end of the word
+	Esc     # exit insert mode
+```
+
+### Remove
+
+```bash
+	r       # replace a single character
+	R	# replace multiple character // press <esc> to exit
+	x	# exterminate the character under the cursor
+	X	# exterminate the character before the cursor
+	cw	# change to the start of the next word (take to buffer and insert)
+	cc	# change entire line
+	C	# change rest of the line
+	dw	# remove to end of the word and take to buffer
+	dd	# remove entire line and take to buffer
+	D	# remove rest of the line and take to buffer
+
+```
+
+> **These commands are best when used with the modifiers**
+
+### Copy and Paste
+
+```bash
+	yw 	# yank (copy) the characters of the word from the cursor position to the start of the next word
+	yy	# yank entire line
+	Y	# same as above
+	p	# paste before the cursor
+	P	# paste after the cursor
 ```
