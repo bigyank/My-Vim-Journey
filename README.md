@@ -113,3 +113,41 @@ vim <filename>       # Open <filename> in vim
 	p	# paste before the cursor
 	P	# paste after the cursor
 ```
+
+## Scrolling
+
+```bash
+	Ctr + b	 # move back one full screen
+	Ctr + f	 # move forward one full screen
+	Ctrl + d # move forward 1/2 a screen
+	Ctrl + u # move back 1/2 a screen
+	zz	 # put the line with the cursor at the center
+	zb	 # put the line with the cursor at the bottom of the screen
+	zt	 # put the line with the cursor at the top
+```
+
+## Visual Mode
+
+```bash
+	v	 # start visual mode, mark lines
+	V	 # start linewise visual mode
+	Ctrl + v # start visual block mode
+	o	 # move to other end of marked area
+	O	 # move to other corner of block
+	<Esc>	 # exit visual mode
+```
+
+> With Visual mode you can do commands like yank, delete, change etc.
+
+## Search
+
+```bash
+	/pattern	# search for a pattern which will take you to the next occurrence.
+	?pattern	# search for a pattern which will take you to the previous occurrence.
+	n		# repeat search in same direction
+	N		# repeat search in opposite direction
+	:noh		# remove highlighting of search matches
+	fx		# jump to next occurrence of character x
+	tx		# jump to before next occurrence of character x
+	;		# continue jumping
+```
