@@ -2,6 +2,32 @@
 
 > Basic Vim commands to start the Vim Journey
 
+## Vim as Language
+
+> Arguably the most brilliant thing about vim is that as you use it you begin to think in it. Vim is set up to function like a language, complete with nouns, verbs, and adverbs.
+
+| Verbs                                          |
+| ---------------------------------------------- |
+| d : delete                                     |
+| c : change                                     |
+| y : yank (copy)                                |
+| v : visually select (V for line vs. character) |
+
+&nbsp;
+| Modifiers |
+|------------------------------------------------|
+| i : inside |
+| a : around |
+| NUM : number (e.g.: 1, 2, 10) |
+| t : searches for something and stops before it |
+&nbsp;
+| Nouns |
+|-------------------------------|
+| w : word |
+| s : sentence |
+| t : tag (think HTML/XML) |
+| b : block (think programming) |
+
 ## Global
 
 ```bash
